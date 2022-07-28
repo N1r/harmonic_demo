@@ -1,0 +1,189 @@
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mandarin tone Perception (the effect of harmonicty)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+
+					</header>
+
+				<!-- Menu -->
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>The effects of harmonicity in Mnadarin tone perception <font color = #58c3c2>Audio Demo</font></h1>
+							<font size = 5><p><i>Yiran Ding Yiya Chen</i></p></font>
+							<p></p>
+							<br></br>
+							<section>
+								<h2><font size = 5 color= #58c3c2>Main Reference</font></h2>
+								<p><blockquote cite="http://">McPherson, M. J., & McDermott, J. H. (2018). Diversity in pitch perception revealed by task dependence. Nature human behaviour, 2(1), 52-66. <br><br>
+								Popham, S., Boebinger, D., Ellis, D. P., Kawahara, H., & McDermott, J. H. (2018). Inharmonic speech reveals the role of harmonicity in the cocktail party problem. Nature communications, 9(1), 1-13.
+								</blockquote>
+
+								</p>
+								<section>
+								<a name="The Effect of Harmonicity"></a>
+								  <h2><font size = 5 color= #58c3c2>F0, pitch and harmoinic</font></h2>
+
+								  <h3><font size = 4 color= #51cc2>Fundamental Frequency (F0)</font></h3>
+
+								  <p>The Fundamental Frequency of a speech signal, often denoted by <b><font style="font-variant: small-caps">F0</font></b>, refer to the approximate frequency of the (quasi-)periodic structure of voiced speech signals.</p>
+								  <p>it is typically not stationary, but changes constantly within a word or sentence, so it can be used for expressive purposes to signify, like emphasis, question, and lexical tone in tonal languages</p>
+								  <h3><font size = 4 color= #51cc2>Pitch</font></h3>
+								  <p>As F0 describe the actual physical phenomenon, wheareas pitch describes how ears and barins interpret the signal, in terms of periodicity.
+								  <br>
+								For example, a voiced signal could have an F0 of 100hz, if a high-pass filter apply to remove all singal componnet below 450hz (which would remove the actual F0). The lowest remaining periodic compeonet would be 500hz (equal to fifth harmonic of original F0)
+								  but a human listener would then typically still preceive a pitch of 100hz even it doesn't exist.This well-known phenomenon is however still not completely understood.
+
+								  <h3><font size = 4 color= #51cc2>Harmonic and Harmonicity</font></h3>
+								  A typical attribute of vocal sound is harmonic stucture, depends on the wave form produced by the vibrating vocal cords. Like the musical instrument, the human voice is not a pure tone, rather, it is composed of a fundamental tone(frequency) and a series of higher frequencies called upper harmonics.
+								  Usually corresponding to a simple mathematical ratio of harmonics. and the peak in harmonics often reflect the Formants of a vowel.
+
+								  <center><img src="h_f.png" alt="harmonic and formants" width="1200",height="200",style="vertical-align:middle"> <br>
+										</center>
+								  <br>
+									<p>Harmonicity play a important role in speech perception, as long as the harmonics are precise multiples of the F0, the voice will sound clear and pleasant. If the voice contains parital of (non-)un-harmonicity, like the old desrepair piano,
+								  it might increase degree of roughness, harshness,or hoarseness.</p>
+									<br> Harmoincs also plays a curical role in term of pitch perception, another important feature of harmonic is the <b>resolvability</b>. as show below.
+
+
+									<center><img src="reso.jpg" alt="resolvability" width="1200",height="200",style="vertical-align:middle"> <br>
+										</center>
+									<p>The frequency resolution of the peripheral auditory system can be represented by auditory filters that increase in bandwidth with increasing frequency (in gray). The low-numbered harmonics (1-6, in blue) of a tone with a fundamental frequency F0 are processed within distinct filters and are said to be 'resolved'. Neighboring high-numbered harmonics (above the 12th, in red) interact within the same filter and are said to be 'unresolved'.</p>
+
+									<br><br>
+								  There are several possible central mechanisim that can be used to extract cues to decode the pitch of harmonic sound. <br>
+									<ul>
+									  <li>The simplest mechanism is the use the lowest-frequency component to extract pitch (F0).</li>
+									  <li>Secondly, audition system might store many spectral harmonic templates, a match between one of these templates and resolved harmonics determins the pitch.</li>
+									  <li>THe third potenital mechanism is to extract pitch from the interactions among unsolved harmonics within an auditory filter, which generate a temporal envelope with a periodicity quetion to the pitch.</li>
+									</ul>
+								  </div>
+
+							</section>
+							<!-- Text -->
+							    <section>
+								<a name="traditional"></a>
+							    	<h2><font size = 5 color= #58c3c2>Evaluation(test-purpose)</font></h2>
+
+										<p>									<p>The effect of harmonicity and relation between pitch and fundamental frequency has been long studied in genreal perception tasks, but the effects of harmonicity in Mandarin tone perception has remained deabted. I'd like to create a series of stimulus to study the possible computations underline during tone processing </p></p>
+							    	<p> This isn't the experiment-oriented demo, so I will embed the audio as well as the spectrogram (which will indicate the manipulation result). It will contain almost 15 audio samples and takes like 5 mins to listen, I will be much appricated for your feedback.
+							    	<ul class="12u 12u$(medium)">
+										<p> To date, there are three possible ways to analysis and manipulate speech then generate (relatively) audioable speech,
+										<li><b><font style="font-variant: small-caps">Pyworld</font></b> A typical source-filter model of speech, it can analysis and manipulate of speech based on F0, Spectral Envelope and Aperodic Envelope genereate by WORLD vocoder</li>
+										<li><b><font style="font-variant: small-caps">Mosaic Speech </font></b> a modified Nosie-vocoded method to mask the desire parts of speech</li>
+										<li><b><font style="font-variant: small-caps">Harmonic plus stochastic model </font></b> a modified version of Sinusoids model that can decompose signal into harmoinc and stochastics parts for analysis and synthesis.
+									</ul>
+
+
+
+									<p>Below are a few demo audios.</p>
+									<div class="table-wrapper">
+										<table>
+											<tbody>
+												<p>Mosaic speech demo.@ the low/high (resolved/unresolved) harmonic can be masked or normalized by using mosaic method, see whether there is difference of tone perception when parital information lost</p>
+												<p> left: only low number harmonics maintain, right: only high-number harmonic maintain. (bi-syllable and sentence example provide.)
+												<tr>
+													<td><img src="audios/nvc_1bao4xiao1_low.jpg" alt="harmonic and formants" width="600",height="200",style="vertical-align:middle">
+														<audio controls=""><source src="audios/nvc_1bao4xiao1_low.wav" /><embed height="50" src="audios/nvc_1bao4xiao1_low.wav" width="100"></embed></audio>
+													</td>
+													<td><img src="audios/nvc_bao4xiao1_high.jpg" alt="harmonic and formants" width="600",height="200",style="vertical-align:middle">
+														<audio controls=""><source src="audios/nvc_bao4xiao1_high.wav" /><embed height="50" src="audios/nvc_bao4xiao1_high.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td><img src="audios/nvc_1nan2mian3_low.jpg" alt="harmonic and formants" width="600",height="200",style="vertical-align:middle">
+														<audio controls=""><source src="audios/nvc_1nan2mian3_low.wav" /><embed height="50" src="audios/nvc_1nan2mian3_low.wav" width="100"></embed></audio>
+													</td>
+													<td><img src="audios/nvc_nan2mian3_high.jpg" alt="harmonic and formants" width="600",height="200",style="vertical-align:middle">
+														<audio controls=""><source src="audios/nvc_nan2mian3_high.wav" /><embed height="50" src="audios/nvc_nan2mian3_high.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td><img src="audios/nvc_1sent_low.jpg" alt="harmonic and formants" width="600",height="200",style="vertical-align:middle">
+														<audio controls=""><source src="audios/nvc_1sent_low.wav" /><embed height="50" src="audios/nvc_1sent_low.wav" width="100"></embed></audio>
+													</td>
+													<td><img src="audios/nvc_sent_high.jpg" alt="harmonic and formants" width="600",height="200",style="vertical-align:middle">
+														<audio controls=""><source src="audios/nvc_sent_high.wav" /><embed height="50" src="audios/nvc_sent_high.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+
+									<div class="table-wrapper">
+										<table>
+											<tbody>
+												<p>Pyworld-based speech demo.@ instead of mask or normalize the low/high harmonics, pyworld based method can remove the energy or amplitude of centain harmonics</p>
+												<p>one syllable audio provided, seems no difference between mosaic</p>
+
+												<tr>
+													<td><img src="audios/biao3da2H1-H6_1_1.jpg" alt="harmonic and formants" width="600",height="200",style="vertical-align:middle">
+														<audio controls=""><source src="audios/biao3da2H1-H6.wav" /><embed height="50" src="audios/biao3da2H1-H6.wav" width="100"></embed></audio>
+													</td>
+													<td><img src="audios/biao3da2H6_above_1_1.jpg" alt="harmonic and formants" width="600",height="200",style="vertical-align:middle">
+														<audio controls=""><source src="audios/biao3da2H6_above.wav" /><embed height="50" src="audios/biao3da2H6_above.wav" width="100"></embed></audio>
+													</td>
+											</tbody>
+										</table>
+
+										<div class="table-wrapper">
+											<table>
+												<tbody>
+													<p>Harmonic plus stochastic model demo @ this method can decompose the signal into harmonic parts and stochastics parts and then manipulate and synthesis, this is only one method able to control harmonic seperately for now.</p>
+													<p>a female and male sentence provided</p>
+													<p> first row : the orignal sentences produced by male/female speaker. second row: the resynthesised inharmonicity sentences by male/female speakers (the harmonics are stretched or compressed that not perfect ratio of F0)
+														it was claimed that it will make the signal aperodic and inconsitent with any signle F0 and hence, rendering F0/pitch from Harmoincs become less possible.
+													<tr>
+														<td><img src="audios/female_harmonicity_sentence.svg" alt="harmonic and formants" width="600",height="200",style="vertical-align:middle">
+															<audio controls=""><source src="audios/082_female.wav" /><embed height="50" src="audios/082_female.wav" width="100"></embed></audio>
+														</td>
+														<td><img src="audios/male_harmonicity_sentence.svg" alt="harmonic and formants" width="600",height="200",style="vertical-align:middle">
+															<audio controls=""><source src="audios/082_male.wav" /><embed height="50" src="audios/082_male.wav" width="100"></embed></audio>
+														</td>
+														</tr>
+
+														<tr>
+															<td><img src="audios/female_inharmonicity_sentence.svg" alt="harmonic and formants" width="600",height="200",style="vertical-align:middle">
+																<audio controls=""><source src="audios/female_inharmonicity_sentence.wav" /><embed height="50" src="audios/female_inharmonicity_sentence.wav" width="100"></embed></audio>
+															</td>
+															<td><img src="audios/male_inharmonicity_sentence.svg" alt="harmonic and formants" width="600",height="200",style="vertical-align:middle">
+																<audio controls=""><source src="audios/male_inharmonicity_sentence.wav" /><embed height="50" src="audios/male_inharmonicity_sentence.wav" width="100"></embed></audio>
+															</td>
+															</tr>
+												</tbody>
+											</table>
+
+
+								<a href="#" class="button special">Back to Top</a>
+								<a href="#f0-control" class="button special">Back to Section Start</a>
+								<br></br><br></br>
+							</section>
+
+							</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,177 @@
+
+<section>
+<a name="The Effect of Harmonicity"></a>
+  <h2><font size = 5 color= #58c3c2>The Effect of Harmonicity</font></h2
+
+  <h3><font size = 4 color= #51cc2>Fundamental Frequency (F0)</font></h3>
+
+  <p>The Fundamental Frequency of a speech signal, often denoted by F0, refer to the approximate frequency of the (quasi-)periodic structure of voiced speech signals.</p>
+  <p>it is typically not stationary, but changes constantly within a word or sentence, so it can be used for expressive purposes to signify, like emphasis, question, and lexical tone in tonal languages</p>
+
+  <h3><font size = 4 color= #51cc2>Pitch</font></h3>
+  <p>As F0 describe the actual physical phenomenon, wheareas pitch describes how ears and barins interpret the signal, in terms of periodicity.
+  <br>
+For example, a voiced signal could have an F0 of 100hz, if a high-pass filter apply to remove all singal componnet below 450hz (which would remove the acuual F0). The lowest remaining periodic compeonet would be 500hz (equal to fifth harmonic of original F0)
+  but a human listener would then typically still preceive a pitch of 100hz even it doesn't exist. There might be a reconstruction from upper avaliable harmonics. This well-known phenomenon is however still not completely understood.
+
+
+  <br> #插入一个图片吧
+
+  <h3><font size = 4 color= #51cc2>Harmonic and Harmonicity</font></h3>
+  A typical attribute of vocal sound is harmonic stucture, depends on the wave form produced by the vibrating vocal cords. Like the musical instrument, the human voice is not a pure tone, rather, it is composed of a fundamental tone(frequency) and a series of higher frequencies called upper harmonics.
+  Usually corresponding to a simple mathematical ratio of harmonics. and the peak in harmonics often reflect the Formants of a vowel.
+
+  <img src="h_f.png" alt="harmonic and formants" width="500",height="200",style="vertical-align:middle"> <br>
+  <br> Harmonicity play a important role in speech perception, as long as the harmonics are precise multiples of the F0, the voice will sound clear and pleasant. If the voice contains parital of (non-)un-harmonicity, like the old desrepair piano,
+  it might increase degree of roughness, harshness,or hoarseness. it also plays a curical role in term of pitch perception.
+  There are several possible central mechanisim that can be used to extract cues to decode the pitch of harmonic sound.
+  The simplest mechanism is the use the lowest-frequency component to extract pitch (F0). Althernatively, the audition system might store many spectral harmonic templates, a match between one of these templates and resolved harmonics determins the pitch.
+  a third potenital mechanism is to extract pitch from the interactions among unsolved harmonics within an auditory filter, which generate a temporal envelope with a periodicity quetion to the pitch.
+
+<p><blockquote cite="http://">
+  game of the year
+</blockquote></p>
+
+  <p>Below are a few demo audios.</p>
+  <div class="table-wrapper">
+    <table>
+      <tbody>
+        <tr>
+          <td><img src="images/pic01.jpg" />
+            <audio controls=""><source src="audios/flat/p225xp226_cae_u001.wav" /><embed height="50" src="audios/flat/p225xp226_cae_u001.wav" width="100"></embed></audio>
+          </td>
+          <td><audio controls=""><source src="audios/flat/p225xp226_cae_u001.wav" /><embed height="50" src="audios/flat/p225xp226_cae_u001.wav" width="100"></embed></audio></td>
+          <td><audio controls=""><source src="audios/flat/p225xp227_cae_u003001.wav" /><embed height="50" src="audios/flat/p225xp227_cae_u003001.wav" width="100"></embed></audio></td>
+          <td><audio controls=""><source src="audios/flat/p225xp228_cae_u006001.wav" /><embed height="50" src="audios/flat/p225xp228_cae_u006001.wav" width="100"></embed></audio>
+          </td>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="audios/flat/p225xp226_cae_u001.wav" /><embed height="50" src="audios/flat/p225xp226_cae_u001.wav" width="100"></embed></audio></td>
+          <td><audio controls=""><source src="audios/flat/p225xp227_cae_u003001.wav" /><embed height="50" src="audios/flat/p225xp227_cae_u003001.wav" width="100"></embed></audio></td>
+          <td><audio controls=""><source src="audios/flat/p225xp228_cae_u006001.wav" /><embed height="50" src="audios/flat/p225xp228_cae_u006001.wav" width="100"></embed></audio>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <a href="#" class="button special">Back to Top</a>
+  <a href="#f0-control" class="button special">Back to Section Start</a>
+  <br></br><br></br>
+</section>
+
+
+<div class="table-wrapper">
+  <table>
+    <thead>
+      <tr>
+        <th><font color= #58c3c2>Source Speaker / Speech</font></th>
+        <th><font color= #58c3c2>Target Speaker / Speech</font></th>
+        <th><font color= #58c3c2>Conversion</font></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="4">p225 (Female) <audio controls=""><source src="audios/ground_1/p225_003_001.wav" /><embed height="50" src="audios/ground_1/p225_003_001.wav" width="100"></embed></audio></td>
+        <td rowspan="4">p226 (Male) <audio controls=""><source src="audios/ground_2/p226_002.wav" /><embed height="50" src="audios/ground_2/p226_002.wav" width="100"></embed></audio></td>
+        <td><font style="font-variant: small-caps">F0-AutoVC</font></td>
+        <td><audio controls=""><source src="audios/ours/p225xp226_ours_u003001.mp3" /><embed height="50" src="audios/ours/p225xp226_ours_u003001.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+      <tr>
+        <td><font style="font-variant: small-caps">AutoVC</font></td>
+        <td><audio controls=""><source src="audios/cae/p225xp226_cae_u003001.mp3" /><embed height="50" src="audios/cae/p225xp226_cae_u003001.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+      <tr>
+        <td>StarGAN-VC</td>
+        <td><audio controls=""><source src="audios/star/p225xp226_star_u003001.mp3" /><embed height="50" src="audios/star/p225xp226_star_u003001.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+      <tr>
+        <td>Chou et. al.</td>
+        <td><audio controls=""><source src="audios/chou/p225xp226_chou_u003001.mp3" /><embed height="50" src="audios/chou/p225xp226_chou_u003001.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+
+      <tr>
+        <td rowspan="4">p225 (Female) <audio controls=""><source src="audios/ground_1/p225_006_001.wav" /><embed height="50" src="audios/ground_1/p225_006_001.wav" width="100"></embed></audio></td>
+        <td rowspan="4">p270 (Male) <audio controls=""><source src="audios/ground_2/p270_002.wav" /><embed height="50" src="audios/ground_2/p270_002.wav" width="100"></embed></audio></td>
+        <td><font style="font-variant: small-caps">F0-AutoVC</font></td>
+        <td><audio controls=""><source src="audios/ours/p225xp270_ours_u006001.mp3" /><embed height="50" src="audios/ours/p225xp270_ours_u006001.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+      <tr>
+        <td><font style="font-variant: small-caps">AutoVC</font></td>
+        <td><audio controls=""><source src="audios/cae/p225xp270_cae_u006001.mp3" /><embed height="50" src="audios/cae/p225xp270_cae_u006001.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+      <tr>
+        <td>StarGAN-VC</td>
+        <td><audio controls=""><source src="audios/star/p225xp270_star_u006001.mp3" /><embed height="50" src="audios/star/p225xp270_star_u006001.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+      <tr>
+        <td>Chou et. al.</td>
+        <td><audio controls=""><source src="audios/chou/p225xp270_chou_u006001.mp3" /><embed height="50" src="audios/chou/p225xp270_chou_u006001.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="4">p226 (Male) <audio controls=""><source src="audios/ground_1/p226_008001.wav" /><embed height="50" src="audios/ground_1/p226_008001.wav" width="100"></embed></audio></td>
+        <td rowspan="4">p225 (Female) <audio controls=""><source src="audios/ground_2/p225_002.wav" /><embed height="50" src="audios/ground_2/p225_002.wav" width="100"></embed></audio></td>
+        <td><font style="font-variant: small-caps">F0-AutoVC</font></td>
+        <td><audio controls=""><source src="audios/ours/p226xp225_ours_u008001.mp3" /><embed height="50" src="audios/ours/p226xp225_ours_u008001.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+      <tr>
+        <td><font style="font-variant: small-caps">AutoVC</font></td>
+        <td><audio controls=""><source src="audios/cae/p226xp225_cae_u008001.mp3" /><embed height="50" src="audios/cae/p226xp225_cae_u008001.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+      <tr>
+        <td>StarGAN-VC</td>
+        <td><audio controls=""><source src="audios/star/p226xp225_star_u008001.mp3" /><embed height="50" src="audios/star/p226xp225_star_u008001.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+      <tr>
+        <td>Chou et. al.</td>
+        <td><audio controls=""><source src="audios/chou/p226xp225_chou_u008001.mp3" /><embed height="50" src="audios/chou/p226xp225_chou_u008001.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+
+      <tr>
+        <td rowspan="4">p227 (Male) <audio controls=""><source src="audios/ground_1/p227_010.wav" /><embed height="50" src="audios/ground_1/p227_010.wav" width="100"></embed></audio></td>
+        <td rowspan="4">p233 (Female) <audio controls=""><source src="audios/ground_2/p233_002.wav" /><embed height="50" src="audios/ground_2/p233_002.wav" width="100"></embed></audio></td>
+        <td><font style="font-variant: small-caps">F0-AutoVC</font></td>
+        <td><audio controls=""><source src="audios/ours/p227xp233_ours_u010.mp3" /><embed height="50" src="audios/ours/p227xp233_ours_u010.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+      <tr>
+        <td><font style="font-variant: small-caps">AutoVC</font></td>
+        <td><audio controls=""><source src="audios/cae/p227xp233_cae_u010.mp3" /><embed height="50" src="audios/cae/p227xp233_cae_u010.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+      <tr>
+        <td>StarGAN-VC</td>
+        <td><audio controls=""><source src="audios/star/p227xp233_star_u010.mp3" /><embed height="50" src="audios/star/p227xp233_star_u010.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+      <tr>
+        <td>Chou et. al.</td>
+        <td><audio controls=""><source src="audios/chou/p227xp233_chou_u010.mp3" /><embed height="50" src="audios/chou/p227xp233_chou_u010.mp3" width="100"></embed></audio>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+<a href="#" class="button special">Back to Top</a>
+<a href="#traditional" class="button special">Back to Section Start</a>
+<br></br><br></br>
+</section>
+
+
+
+# html 的创建 基本没问题了
+ 字体 格式 想法 主要是 需要生成那些 图谱和音频；
