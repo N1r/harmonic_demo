@@ -1,0 +1,66 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.1185714285714288 
+tiers? <exists> 
+size = 3 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "union" 
+        xmin = 0 
+        xmax = 3.1185714285714288 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.22428571428571445 
+            text = "silent" 
+        intervals [2]:
+            xmin = 0.22428571428571445 
+            xmax = 2.914285714285714 
+            text = "sounding" 
+        intervals [3]:
+            xmin = 2.914285714285714 
+            xmax = 3.1185714285714288 
+            text = "silent" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "silences" 
+        xmin = 0 
+        xmax = 3.1185714285714288 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.22428571428571445 
+            text = "silent" 
+        intervals [2]:
+            xmin = 0.22428571428571445 
+            xmax = 2.914285714285714 
+            text = "sounding" 
+        intervals [3]:
+            xmin = 2.914285714285714 
+            xmax = 3.1185714285714288 
+            text = "silent" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "VAD" 
+        xmin = 0 
+        xmax = 3.1185714285714288 
+        intervals: size = 4 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.5786297922006367 
+            text = "sounding" 
+        intervals [2]:
+            xmin = 1.5786297922006367 
+            xmax = 2.24664528286262 
+            text = "GREEN" 
+        intervals [3]:
+            xmin = 2.24664528286262 
+            xmax = 2.914285714285714 
+            text = "shirt" 
+        intervals [4]:
+            xmin = 2.914285714285714 
+            xmax = 3.1185714285714288 
+            text = "" 
