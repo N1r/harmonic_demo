@@ -42,17 +42,17 @@ item []:
         intervals: size = 4 
         intervals [1]:
             xmin = 0 
-            xmax = 1.2931860353984295 
+            xmax = 1.3429036149495064 
             text = "sounding" 
         intervals [2]:
-            xmin = 1.2931860353984295 
-            xmax = 1.7281198722587394 
+            xmin = 1.3429036149495064 
+            xmax = 1.6512338869540457 
             text = "green" 
         intervals [3]:
-            xmin = 1.7281198722587394 
-            xmax = 2.6913151927437644 
+            xmin = 1.6512338869540457 
+            xmax = 2.6931775647624887 
             text = "SHIRT" 
         intervals [4]:
-            xmin = 2.6913151927437644 
+            xmin = 2.6931775647624887 
             xmax = 2.8426303854875283 
             text = "" 
